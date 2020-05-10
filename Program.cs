@@ -18,12 +18,14 @@ namespace oop
     {
 	    private string marka;
 	    private string model;
+	    private int rok_produkcji;
 	    public Car(string marka, string model, int rok_produkcji){
 	    	this.marka = marka;
-		this.model = model + rok_produkcji;
+		this.model = model;
+		this.rok_produkcji = rok_produkcji;
 	    }
 	    public string Napisz(){
-		    return marka + " " + model;
+		    return marka + " " + model+ " " + rok_produkcji;
 	    }
 
     }
