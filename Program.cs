@@ -6,6 +6,9 @@ namespace oop
     {
 	  public double x;
 	  public double y;
+	  public string Napisz(){
+	       return "(" + x + "," + y + ")";
+	  }
     }
     
     class Program
@@ -17,7 +20,7 @@ namespace oop
 	     var punkt = new Point();
 	     punkt.x = 3;
 	     punkt.y = 7;
-	     Console.WriteLine("Hello World! "+ (a+b)+" ("+punkt.x+","+punkt.y+")");
+	     Console.WriteLine("Hello World! "+ (a+b)+" "+ punkt.Napisz());
         }
     }
 }
